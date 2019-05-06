@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  padding: 0;
+  margin: 0;
+  /* font-family: 'Press Start 2P', cursive; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  color: white;
+}
+.header {
+  grid-column: span 4;
+  background-color: #9798cb;
+  text-align: center;
+  padding: 5px;
+}
+.header h3 {
+  margin: 0;
+}
+.menu {
+  grid-column: span 8;
+  background-color: #fd706d;
+}
+ul{
+  grid-column: span 12;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  text-decoration-color: none;
+  margin: 3px;
+}
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.content {
+  grid-column: span 12;
+  height: auto;
+}
+.welcome {
+  grid-column: span 12;
+  text-align: center;
+  height: 200px;
+  background-image: 
+  linear-gradient(rgba(151,152,203, .4), rgb(253,112,109, .4)),
+  url('../images/banner-coffeebag.jpg');
+  overflow: hidden;
+  background-size: 450px;
+}
+.welcome h1 {
+  color: white;
+  margin-bottom: 5px;
+}
+.welcome p {
+  color: white;
+}
+#about {
+  grid-column: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  background-color: white;
+  color: #55558a;
+  border: 2px solid #55558a;
+  height: auto;
+  text-align: center;
+}
+#about h2 {
+  margin: 0;
+  padding: 10px;
+  background-color: #9798cb;
+  color: white;
+  border-bottom: 3px solid #55558a;
+  box-shadow: 2px #55558a;
+}
+#skill-display {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: auto;
+  margin: 5px;
+  height: auto;
+  background-color: #fd706d;
+  color: white;
+  border: 1px solid #b63d3b;
+  box-shadow: 2px 2px #b63d3b;
+}
+.skill {
+  grid-column: span 3;
+  margin: 5px;
+  height: 30px;
+  background-color: white;
+  color: #b63d3b;
+  border: 1px solid #b63d3b;
+  border-radius: 5px;
+  box-shadow: 2px 2px #b63d3b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+#projects {
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+}
+.project {
+  grid-column: span 12;
+  margin: 5px;
+  color: #9798cb;
+  border: 2px dashed #55558a;
+  border-radius: 5px;
+  /* box-shadow: 1px 1px #55558a; */
+}
+.project h2 {
+  text-align: center;
+  margin: 0;
+  padding: 25px;
+  background-color: #9798cb;
+  color: white;
+  border-bottom: 3px solid #55558a;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.project p {
+  margin-top: 0;
+  padding: 20px;
+  border-top: 1px solid #55558a;
+}
+.footer {
+  grid-column: span 12;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  margin-top: 15px;
+  background-color: #fd706d;
+  height: 300px;
+  color: white;
+  text-align: center;
+}
+#contact ul li {
+  display: block;
+}
+
+/* Pseudo */
+.menu ul li a:hover {
+  color: #55558a;
+}
+
+.skill:hover {
+  background-color: #b63d3b;
+  color: white;
+  /* fd706d */
+  border: 1px solid #b63d3b;
+  box-shadow: 2px 2px #691d1b;
+  transition: .15s ease-in-out;
+}
